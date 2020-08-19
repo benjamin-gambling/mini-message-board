@@ -1,0 +1,102 @@
+body {
+  padding: 50px;
+  font-size: 14px;
+  font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+h1 {
+  color: rgba(0, 183, 255, 1);
+  padding: 10px 10px;
+  margin: 0px;
+  border-left: 5px solid rgba(0, 183, 255, 1);
+}
+
+hr {
+  border-top: 1px solid rgba(0, 183, 255, 0.25);
+  margin-top: 1em;
+}
+
+.title {
+  p {
+    padding: 10px 20px;
+  }
+}
+
+.messages {
+  padding: 10px 0px;
+  div {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+
+    .input {
+      padding: 10px;
+      border-left: 5px solid rgba(0, 183, 255, 0.75);
+      background-color: rgba(0, 183, 255, 0.1);
+
+      .author {
+        display: flex;
+        flex-direction: row-reverse;
+        margin: 0px;
+        opacity: 0.75;
+      }
+    }
+    .added {
+      font-size: 10px;
+      opacity: 0.75;
+    }
+  }
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  div {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+
+    label {
+      color: rgba(0, 183, 255, 1);
+      padding: 10px;
+      border-left: 5px solid rgba(0, 183, 255, 0.75);
+    }
+
+    #inputText,
+    #inputName {
+      font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
+      font-size: 12px;
+      width: 90%;
+      padding: 10px;
+      margin: 10px auto 0px auto;
+      background-color: rgba(0, 183, 255, 0.1);
+      border-radius: 5px;
+      border: 1px solid rgba(0, 183, 255, 0.5);
+      outline: none;
+    }
+  }
+}
+
+.buttons {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  .button {
+    font-size: 12px;
+    color: #111;
+    margin: 10px;
+    background-color: rgba(0, 183, 255, 0.5);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    width: 80px;
+    cursor: pointer;
+  }
+}
+
+a {
+  color: rgba(0, 183, 255, 0.5);
+}

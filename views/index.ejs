@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+  <body>
+    <div class="title">
+      <h1><%= title %></h1>
+      <hr />
+      <p>
+        Welcome to <%= title %>! Expressanger is a simple messaging board that
+        was made using NodeJS and Express as part of the
+        <a href="https://www.theodinproject.com/courses/nodejs" target="_blank">
+          The Odin Project: NodeJS curriculum </a
+        >. Please feel free to play around and add messages of any sort.
+      </p>
+    </div>
+    <div class="messages">
+      <h1>
+        Messages
+      </h1>
+      <hr />
+      <% messages.forEach((message) => { %>
+      <div>
+        <div class="input">
+          <p class="text"><%= message.text %></p>
+          <p class="author">- <%= message.user %></p>
+        </div>
+        <p class="added"><%= message.added %></p>
+      </div>
+      <% }) %>
+      <div class="buttons">
+        <a class="button" href="/new" type="button">Add Message</a>
+      </div>
+    </div>
+  </body>
+</html>
